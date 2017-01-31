@@ -8,7 +8,6 @@ var onDomReady = function onDomReady() {
   });
 
   app.setup();
-  app.run();
 };
 
 //on dom ready
