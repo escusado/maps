@@ -14,10 +14,6 @@ module.exports = class {
     this.leaflet.options.minZoom = 17;
     this.leaflet.options.maxZoom = 22;
 
-    L.tileLayer('http://localhost:8080/public/myMap/{z}/{x}/{y}.png?{foo}', {foo: 'bar'}).addTo(this.leaflet);
-  }
-
-  run () {
-
+    L.tileLayer('http://localhost:8080/public/myMap/{z}/{x}/{y}.png').addTo(this.leaflet);
   }
 };

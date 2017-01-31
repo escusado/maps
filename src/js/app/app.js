@@ -14,8 +14,4 @@ module.exports = class {
     this.map.setup();
     this.element.appendChild(this.map.element);
   }
-
-  run () {
-    console.log('App run');
-  }
 };
