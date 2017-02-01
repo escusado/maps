@@ -2,10 +2,11 @@
 
 module.exports = {
     entry: './entry.js',
+    target: 'web',
     output: {
-        path: __dirname + '/dist',
-        filename: 'bundle.js',
-        publicPath:  __dirname + '/public'
+        path: __dirname,
+        filename: 'public/bundle.js',
+        publicPath: '/public/'
     },
     module: {
         loaders: [
