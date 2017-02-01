@@ -15,7 +15,7 @@ module.exports = class {
     // this.leaflet.options.maxZoom = 22;
 
     //myMap
-    L.tileLayer('myMap/{z}/{x}/{y}.png', {
+    L.tileLayer('public/myMap/{z}/{x}/{y}.png', {
       maxZoom: 18,
       maxNativeZoom: 21
     }).addTo(this.leaflet);
@@ -23,11 +23,10 @@ module.exports = class {
     //Base Layer
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      maxNativeZoom: 18,
+      maxNativeZoom: 19,
       id: 'mapbox.satellite',
       accessToken: 'pk.eyJ1Ijoiam9hcXVpbi1za3ljYXRjaCIsImEiOiJ5aG9SVjVnIn0.He9MguxUYbZsk2tXdYPFWQ'
     }).addTo(this.leaflet);
 
-    console.log('>>> Added mapbox');
   }
 };
